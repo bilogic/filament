@@ -50,6 +50,9 @@ trait HasTenancy
         return $this;
     }
 
+    /**
+     * https://filamentphp.com/docs/3.x/panels/tenancy#setting-up-tenancy
+     */
     public function tenant(?string $model, ?string $slugAttribute = null, ?string $ownershipRelationship = null): static
     {
         $this->tenantModel = $model;

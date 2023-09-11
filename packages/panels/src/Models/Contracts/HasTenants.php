@@ -11,6 +11,8 @@ interface HasTenants
     public function canAccessTenant(Model $tenant): bool;
 
     /**
+     * https://filamentphp.com/docs/3.x/panels/tenancy#setting-up-tenancy
+     *
      * @return array<Model> | Collection
      */
     public function getTenants(Panel $panel): array | Collection;
